@@ -23,17 +23,21 @@ var chart_obj = {
         // }
     ]
 };
+var prices = []; 
 
+var getData = function(Stockdata,chart_obj){
+    console.log(Stockdata);
+  
+        //loop through Stockdata and isolate the stock price and copy it into the chart_obj data field
+        for(var i = 0; i< Stockdata.dataset.data.length; i++){
+            // prices.push(data.dataset.data[i][1]);
+            chart_obj.datasets[0].data.push(Stockdata.dataset.data[i][1]);
+    };
+}
 
-$(document).ready(function(){
+getData(Stockdata,chart_obj);
+console.log(chart_obj);
 
-	//enable listeners
-	
-
-		// instagram_api($(this));
-        // getData(Stockdata);
-		
-        // console.log(prices);
 
     // Get context with jQuery - using jQuery's .get() method.
 	var ctx = $("#myLineChart").get(0).getContext("2d");
@@ -46,7 +50,7 @@ $(document).ready(function(){
 
 
 
-});//end doc.ready
+// });//end doc.ready
 
 
 //global variable

@@ -1,11 +1,60 @@
 $(document).ready(function(){
 	//enable listeners
-	$('#tag-search').submit(function(event){event.preventDefault();instagram_api($(this));})
+	
+
+		instagram_api($(this));
+		
+		var ctx = $("#myChart").get(0).getContext("2d");
+
+		var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July", "September", "October", "November", "December"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 86, 27, 90]
+        },
+
+        
+    ]
+};
+
+var myLineChart = new Chart(ctx).Line(data);
+				// var piechart = new Chart(ctx).Pie(data);
+			});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	//load default page
 	/*PLACE FUNCTION HERE THAT LOADS PICTURES ON PAGE LOAD */
-	
-});
+
 
 //global variable
 var animation ='';
@@ -18,15 +67,17 @@ function instagram_api(frm){
 	/* PLACE FUNCTION HERE */
 
 }
-var scroll_images=function(){
-	$('#image-container').animate({'top':'-=5'},1,function(){
-	});
-}
+
+// var scroll_images=function(){
+// 	$('#image-container').animate({'top':'-=5'},1,function(){
+// 	});
+// }
 
 function images_response(data){
 	console.log(data);
-	images = data.data;
-	$('#instagram-pics').html('');
+	images = data.dataset.data;
+	console.log(images);
+	$('#myChart').html('');
 	var image_url="";
 	for(image in images){
 		var image_url=images[image].images.standard_resolution.url;
@@ -38,16 +89,16 @@ function images_response(data){
 
 
 
-		/* 
-			WRITE THE FUNCTION THAT TAKES THE IMAGE URL AND ADDS THEM TO
-			list with the id instagram-pics. You will need to know the following things:
+		 
+			// WRITE THE FUNCTION THAT TAKES THE IMAGE URL AND ADDS THEM TO
+			// list with the id instagram-pics. You will need to know the following things:
 
-			1. To add html to an element with jquery use this syntax $('#instagram-pics').append('html tag goes in here');
-			2. To make sure all images fit in the squares available to them, use these css properties
-			   background:url('+image url+'), 
-			   background-size:cover
-			   background-position:center center
-	     */
+			// 1. To add html to an element with jquery use this syntax $('#instagram-pics').append('html tag goes in here');
+			// 2. To make sure all images fit in the squares available to them, use these css properties
+			//    background:url('+image url+'), 
+			//    background-size:cover
+			//    background-position:center center
+	     
 	}
 
 
@@ -89,4 +140,6 @@ function ajax_call(tag){
 	});
 
 }
+
+
 

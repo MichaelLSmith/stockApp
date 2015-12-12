@@ -17,8 +17,9 @@ $(document).ready(function(){
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
+            data: [" 140"]
         },
+
         {
             label: "My Second dataset",
             fillColor: "rgba(151,187,205,0.2)",
@@ -28,7 +29,8 @@ $(document).ready(function(){
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(151,187,205,1)",
             data: [28, 48, 40, 19, 86, 27, 90]
-        },
+        }
+     
 
         
     ]
@@ -121,7 +123,7 @@ function ajax_call(tag){
 	*/
 	// var photos={};=
 	$.ajax({
-		url: 'https://www.quandl.com/api/v3/datasets/WIKI/FB.json',
+		url: 'https://www.quandl.com/api/v3/datasets/FRED/USARGDPQDSNAQ.json',
 		type:'GET',
 		// data:{clientId:'61f8b631abd34732a3bcd8c73d0d73a9'},
 		dataType:'json',

@@ -53,3 +53,19 @@ var scale = d3.scale.linear()
       }
 
       d3.csv("week_temperature_sf.csv", type, render);
+
+// adding axes from slide 102
+
+var xAxisG = g.append("g")
+        .attr("transform", "translate(0," + innerHeight + ")");
+var yAxisG = g.append("g");
+
+var xScale = d3.scale.ordinal().rangeBands([0, innerWidth], barPadding);
+var yScale = d3.scale.linear().range([innerHeight, 0]);
+
+var xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+var yAxis = d3.svg.axis().scale(yScale).orient("left");
+
+// in render function:
+    xAxisG.call(xAxis);
+    yAxisG.call(yAxis);

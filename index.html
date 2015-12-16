@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
 	<title></title>
-
-    <!-- Chart styles -->
-	<link rel="stylesheet" type="text/css" href="css/chart.css">
-
-    <!-- D3 Script -->
-    <script src="js/d3/d3.v3.js"></script>
-
-    <style>
-      path {
-        fill: none;
-        stroke: black;
-        stroke-width: 2px;
-      }
-    </style>
-
-
+	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
-<script type="text/javascript" src="js/api.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+
 
 <div id="search" class="search">
 	<form id="tag-search" action="" method="get">
@@ -30,17 +13,20 @@
 		<button type="submit">search</button>
 	</form>
 </div>
+<div id="image-container" class="image-container">
+	<ul id="instagram-pics" class="instagram-pics">
+	
+	</ul>
+</div>
 
-<!-- Graph div -->
-<svg></svg>
+<canvas id="myLineChart" width="800" height="400"></canvas>
 
-<br>
-<svg width="50" height="50">
-    <circle cx="25" cy="25" r="22"
-    fill="blue" stroke="gray" stroke-width="2"/>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/chartOptions.js"></script>
+<script type="text/javascript" src="js/api.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 
 
 </body>

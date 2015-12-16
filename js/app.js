@@ -1,44 +1,36 @@
-var chart_obj = {
-    labels: [],
-    datasets: [
-        {
-            label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: []
-        },
-        // {
-        //     label: "My Second dataset",
-        //     fillColor: "rgba(151,187,205,0.2)",
-        //     strokeColor: "rgba(151,187,205,1)",
-        //     pointColor: "rgba(151,187,205,1)",
-        //     pointStrokeColor: "#fff",
-        //     pointHighlightFill: "#fff",
-        //     pointHighlightStroke: "rgba(151,187,205,1)",
-        //     data: [28, 48, 40, 19, 86, 27, 90]
-        // }
-    ]
-};
+var data = [ [1, 5], [2,10], [3,15], [4,20], [5,25], [6,30] ];
+console.log(data);
 
-var getData = function(Stockdata,chart_obj){
-    console.log(Stockdata);
-  
-    //loop through Stockdata and push dates and prices into the chart_obj label and datasets.data fields
-    for(var i = 0; i< Stockdata.dataset.data.length; i++){
-        chart_obj.datasets[0].data.push(Stockdata.dataset.data[i][1]);
-        chart_obj.labels.push(Stockdata.dataset.data[i][0]);
-    };
+
+//d3.extent - min and max values in one function
+
+
+var outerWidth = 500;
+    outerHeight = 250;
+    margin = {left: 30, top: 30, right: 30, bottom: 30};
+
+
+var svg = d3.select("body").append("svg")
+    .attr("width", outerWidth)
+    .attr("height", outerHeight);
+var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+var path = g.append("path");
+
+var innerWidth  = outerWidth  - margin.left - margin.right;
+var innerHeight = outerHeight - margin.top  - margin.bottom;
+
+var xScale = d3.scale.linear().range([0, innerWidth]);
+var yScale = d3.scale.linear().range([innerHeight, 0]);
+
+var line = d3.svg.line()
+    .x(function (d) {return xScale(d[0]); })
+    .y(function (d) {return yScale(d[1]); });
+
+function render(data){
+    xScale.domain( d3.extent(data, function (d) { return d[0]; }));
+    yScale.domain( d3.extent(data, function (d) { return d[1]; }));
+    path.attr("d", line(data));
 }
 
-getData(Stockdata,chart_obj);
-console.log(chart_obj);
-
-//Code for chart
-    // Get context with jQuery - using jQuery's .get() method.
-    var ctx = $("#myLineChart").get(0).getContext("2d");
-
-    var myLineChart = new Chart(ctx).Line(chart_obj, chart_options);
+render(data);

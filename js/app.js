@@ -1,22 +1,21 @@
 
 //Simple Test Data array
 var testData = [ [1, 5], [2,10], [3,15], [4,20], [5,25], [6,30] ];
+var stockInfo = stockData.dataset.data;
 
-//d3.extent - min and max values in one function
 
-
+//Set size of SVG
 var outerWidth = 500;
     outerHeight = 250;
     buffer = 10;
     margin = {left: 30, top: 30, right: 30, bottom: 30};
-
 var innerWidth  = outerWidth  - margin.left - margin.right;
 var innerHeight = outerHeight - margin.top  - margin.bottom;
 
+//create svg element in DOM
 var svg = d3.select("body").append("svg")
     .attr("width", outerWidth)
     .attr("height", outerHeight)
-    .data(stockData.dataset.data);
 
 var g = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -31,7 +30,8 @@ var yAxisG = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top  + ")");
 
 //Scale creation
-var xScale = d3.scale.linear().range([0, innerWidth]);
+// var xScale = d3.scale.linear().range([0, innerWidth]);
+var xScale = d3.time.scale().range([0, innerWidth]);
 var yScale = d3.scale.linear().range([innerHeight, 0]);
 
 //Line creation
@@ -49,22 +49,30 @@ var line = d3.svg.line()
         .scale(yScale)
         .orient("left");
 
-//parse Stock Data from API
-console.log(stockData);
-console.log(stockData.dataset.data);
+//parse Stock Data from API to convert date from string into number
 
-for(i in stockData.dataset.data){
-    var dateValue = stockData.dataset.data[i];
-    }
-console.log(dateValue);
+console.log(stockInfo[0][0]);
+//need to change date from string of 2015-01-01 into date number that d3 can chart on graph
+//it will be in milliseconds. Need to convert it and then replace it in the data array along side
+//the stock price. I might need to create a new array of just the two values.
+stockInfo.forEach(function (d){
+        var parsedDate = Date.parse(d[0]);
+        console.log(parsedDate);
+    })
 
+
+console.log(stockInfo[0][0]);
 
 //Create chart function
 function render(data){
-   xScale.domain( d3.extent(data, function (d) { console.log('d[0]'); console.log(d[0]); return d[0]; }));
-    yScale.domain( d3.extent(data, function (d) { console.log('d[1]'); console.log(d[1]); return d[1]; }));
+   xScale.domain( d3.extent(data, function (d) { return d[0]; }));
+   yScale.domain( d3.extent(data, function (d) { return d[1]; }));
 
-    path.attr("d", line(data, function (d) { return d}));
+   //console.log('d[0]'); console.log(d[0]);
+   //console.log('d[1]'); console.log(d[1]);
+
+    // path.attr("d", line(data, function (d) { return d}));
+    //problem is with scale not axis. Need to parse date so it can be drawn as a line.
 
     xAxisG.call(xAxis);
     yAxisG.call(yAxis);

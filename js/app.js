@@ -1,13 +1,8 @@
-
-//Simple Test Data array
-var testData = [ [1, 5], [2,10], [3,15], [4,20], [5,25], [6,30] ];
-var stockData = stockListing.dataset.data;
-
 //Set size of SVG
 var outerWidth = 500;
     outerHeight = 250;
     buffer = 10;
-    margin = {left: 30, top: 30, right: 30, bottom: 30};
+    margin = {left: 50, top: 30, right: 30, bottom: 30};
 var innerWidth  = outerWidth  - margin.left - margin.right;
 var innerHeight = outerHeight - margin.top  - margin.bottom;
 
@@ -67,31 +62,16 @@ function dateParse(stockInfo){
 }
 
 dateParse(stockData);
-console.log(newData);
-
-// console.log(stockData[0][0]);
 
 //Create chart function
 function render(data){
    xScale.domain( d3.extent(data, function (d) { return d[0]; }));
    yScale.domain( d3.extent(data, function (d) { return d[1]; }));
 
-   //console.log('d[0]'); console.log(d[0]);
-   //console.log('d[1]'); console.log(d[1]);
-   // console.log('call dateParse()');
-   // dateParse(data);
-
-   //call dateParse function. Go through stock date in data array and return parsedData to chart line with.
-  // console.log('newData'); 
-  // console.log(newData);
-
-
     path.attr("d", line(data), function (d) { return d} );
-    //problem is with scale not axis. Need to parse date so it can be drawn as a line.
 
     xAxisG.call(xAxis);
     yAxisG.call(yAxis);
-
 }
 
 render(newData);

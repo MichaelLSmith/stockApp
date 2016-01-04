@@ -36,12 +36,14 @@ var line = d3.svg.line()
 // create yAxis
     var xAxis = d3.svg.axis()
         .scale(xScale)
-        .orient("bottom");
+        .orient("bottom")
+        .ticks(5);
 
 // create yAxis
     var yAxis = d3.svg.axis()
         .scale(yScale)
-        .orient("left");
+        .orient("left")
+        .ticks(5);
 
 //parse Stock Data from API to convert date from string into number
 

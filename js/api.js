@@ -48,7 +48,7 @@
 // var stockObj;
 
 var request;
-console.log(request);
+
 
 function simpleAjax(){
     request = new XMLHttpRequest()
@@ -56,21 +56,17 @@ function simpleAjax(){
     request.open('GET', 'https://www.quandl.com/api/v3/datasets/WIKI/ALEX.json?auth_token=SQ6hUVEtaezYxrtDK__i');
     request.responseType = 'json';
 
-
     request.onreadystatechange = function() {
       if (request.readyState == 4 && request.status == 200) {
-        // console.log(request.response.dataset);
+
+        //moves jsonData into dataManipulation.js so it can be formated to build d3 chart.
         traverseJson(request);
       }
     }
 
-
-
     request.send();
     // console.log(request);
     console.log(request.status);
-
-    
 }
 
 

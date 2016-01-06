@@ -45,28 +45,10 @@ var line = d3.svg.line()
         .orient("left")
         .ticks(5);
 
-//parse Stock Data from API to convert date from string into number
-
-
-//need to change date from string of 2015-01-01 into date number that d3 can chart on graph
-//it will be in milliseconds. Need to convert it and then replace it in the data array along side
-//the stock price. I might need to create a new array of just the two values.
-
-//consider moving the array manipulation functionality into another file (possibly api.js or separate data manipulation file if api gets long).
-var newData = [];
-
-function dateParse(stockInfo){
-    var counter = -1
-    stockData.forEach (function (d){
-        counter++;
-        newData[counter] = [Date.parse(stockData[counter][0]) , stockData[counter][1] ];
-    });
-}
-
-dateParse(stockData);
-
 //Create chart function
 function render(data){
+    console.log('render()');
+    console.log(data);
    xScale.domain( d3.extent(data, function (d) { return d[0]; }));
    yScale.domain( d3.extent(data, function (d) { return d[1]; }));
 
@@ -76,4 +58,7 @@ function render(data){
     yAxisG.call(yAxis);
 }
 
-render(newData);
+function triggerChart(){
+    // render(newData);
+    console.log(jsonStockData);
+}

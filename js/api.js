@@ -45,14 +45,22 @@ function ajaxCall(){
 //simple AJAX test
 
 var request;
+// var stockObj;
 
 function simpleAjax(){
     console.log('simpleAjax()');
     request = new XMLHttpRequest();
 
-    request.open('GET', 'https://www.quandl.com/api/v3/datasets/WIKI/WRB.json?auth_token=SQ6hUVEtaezYxrtDK__i');
+    request.open('GET', 'https://www.quandl.com/api/v3/datasets/WIKI/ALEX.json?auth_token=SQ6hUVEtaezYxrtDK__i');
     request.send();
     console.log(request);
-    console.log(request.response);
+    console.log(request.status);
+    console.log(typeof request.responseText);
+    var stockObj = JSON.parse('{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}');
+    console.log(stockObj);
+    // console.log(request.response);
     // console.log(request.responseText);
 }

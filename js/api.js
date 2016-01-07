@@ -1,13 +1,13 @@
-var stockUrl;
 var auth_url;
+var base_url = 'https://www.quandl.com/api/v3/datasets/';
 
 //Passing a value from HTML into a function: http://stackoverflow.com/questions/7957039/passing-value-from-text-input-into-javascript-function
 
 function buildUrl(){
-    var input = document.getElementById('stockUrl'),
-        stockUrl = input.value;
-    if (stockUrl) {
-        auth_url = stockUrl + '?auth_token=SQ6hUVEtaezYxrtDK__i'
+    var input = document.getElementById('stockCode'),
+        stockCode = input.value;
+    if (stockCode) {
+        auth_url = base_url + stockCode + '.json?auth_token=SQ6hUVEtaezYxrtDK__i'
     }
     console.log(auth_url);
 }
@@ -15,6 +15,8 @@ function buildUrl(){
 //url for W.R. Berkley Corp
 //https://www.quandl.com/api/v3/datasets/WIKI/WRB.json?auth_token=SQ6hUVEtaezYxrtDK__i
 
+
+//   WIKI/CSII
 
 var request;
 

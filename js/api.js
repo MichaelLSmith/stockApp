@@ -65,7 +65,6 @@ function simpleAjax(){
     }
 
     request.send();
-    // console.log(request);
     console.log(request.status);
 }
 

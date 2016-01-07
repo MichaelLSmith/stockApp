@@ -5,7 +5,7 @@ var isolatedStockData = [];
 var dateWithFormatedDate = [];
 
 function traverseJson(request){
-    
+    console.log(request);
     var stockData = request.response.dataset.data;
         counter = -1;
 
@@ -14,7 +14,9 @@ function traverseJson(request){
         counter++;
         isolatedStockData[counter]= [Date.parse(stockData[counter][0]) , stockData[counter][4] ];
     })
-    console.log(isolatedStockData);
-
-    // render(isolatedStockData);
+    render(isolatedStockData);
 }
+
+
+
+

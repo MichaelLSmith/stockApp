@@ -46,24 +46,8 @@ var line = d3.svg.line()
         .ticks(5);
 
 
-//parse Stock Data from API to convert date from string into number
-
-var newData = [];
-
-function dateParse(stockInfo){
-    var counter = -1
-    stockData.forEach (function (d){
-        counter++;
-        newData[counter] = [Date.parse(stockData[counter][0]) , stockData[counter][1] ];
-    });
-    // render(dateWithFormatedDate);
-    console.log('newData after Parse')
-    console.log(newData);
-}
-
 //Create chart function
 function render(data){
-    console.log('render()');
     console.log(data);
    
    xScale.domain( d3.extent(data, function (d) { return d[0]; }));
@@ -74,6 +58,3 @@ function render(data){
     xAxisG.call(xAxis);
     yAxisG.call(yAxis);
 }
-
-dateParse(stockData);
-render(newData);

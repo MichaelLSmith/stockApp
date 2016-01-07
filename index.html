@@ -35,8 +35,8 @@
 
 <div id="search" class="search">
 		<input type="text" id="stockUrl" name="stockUrl">
-		<a id="search-button" onclick="ajaxCall();" href="javascript:void(0);" title="title">Submit URL</a>
-        <!-- Use skeleton to turn into button -->
+		
+        <button type="button" onclick="buildUrl();" >enter URL</button>
 </div>
 
 
@@ -45,15 +45,9 @@
 <button onclick="simpleAjax()" id="AjaxPrompt">Get Stock Data</button>
 </div>
 
-<div>
+<!-- <div>
     <button onclick="triggerChart()" id="chartPrompt">Build Chart</button>
-</div
-
-<br>
-<svg width="50" height="50">
-    <circle cx="25" cy="25" r="22"
-    fill="blue" stroke="gray" stroke-width="2"/>
-
+</div -->
 
 </body>
 </html>

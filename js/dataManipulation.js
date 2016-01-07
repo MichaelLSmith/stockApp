@@ -18,18 +18,3 @@ function traverseJson(request){
 
     // render(isolatedStockData);
 }
-
-
-//parse Stock Data from API to convert date from string into number
-
-function dateParse(stockInfo){
-    var counter = -1
-    stockData.forEach (function (d){
-        counter++;
-        dateWithFormatedDate[counter] = [Date.parse(stockData[counter][0]) , stockData[counter][1] ];
-    });
-    render(dateWithFormatedDate);
-}
-
-dateParse(stockData);
-console.log(dateWithFormatedDate);

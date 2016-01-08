@@ -7,18 +7,7 @@
     <!-- Chart styles -->
 	<link rel="stylesheet" type="text/css" href="css/chart.css">
 
-    <!-- d3 library -->
-    <script src="js/d3/d3.v3.js"></script>
-
-    <!-- Stock Data and API File -->
-    <script type="text/javascript" src="js/hardCodedData.js"></script>
-    <script src="js/dataManipulation.js"></script>
-    <script src="js/api.js"></script>  
-
-    <!-- chart JS -->
-
-    <!--<script src="js/d3chart.js"></script>-->
-    <script src="js/main.js"></script>
+   
 
     <style>
       path {
@@ -30,31 +19,47 @@
 
 </head>
 <body>
-<!-- d3 chart script. Must be in body to work -->
-<script src="js/d3chart.js"></script>
+
 
 <div id="search" class="search">
 	<input type="text" id="stockCode">
 	
-    <button type="button" onclick="buildUrl();" >enter URL</button>
+    <button type="button" onclick="buildUrl();" >enter Company Code</button>
 </div>
 
 <div id="codeSearchArea">
     <label for="codeSearch">Find Company Stock Price</label>
     <p>Enter the name of a company to find stock</p>
-    <input type="search" name="codeSearch" id="codeSearch" placeholder="company name"/>
+    <input type="search" name="codeSearch" id="codeSearch" placeholder="company name" onkeyup="buildResults(codesObj)" />
 </div>
-<div id="searchResults"></div>
+<div id="searchResultsBase"></div>
 
+<!-- Hard coded search results -->
 
+<div>
+    <ul>
+        <li>
+            <span onclick="buildUrl()">Company Name</span>
+        </li>
+        <li>Company Code(May not need to display this)</li>
+    </ul>
+</div>
 
 <div>
 <button onclick="apiCall()" id="AjaxPrompt">Get Stock Data</button>
 </div>
 
-<!-- <div>
-    <button onclick="triggerChart()" id="chartPrompt">Build Chart</button>
-</div -->
+
+ <!-- d3 library -->
+    <script src="js/d3/d3.v3.js"></script>
+
+    <!-- Stock Data and API File -->
+    <script type="text/javascript" src="js/hardCodedData.js"></script>
+    <script src="js/dataManipulation.js"></script>
+    <script src="js/api.js"></script>  
+    
+    <!-- d3 chart script. Must be in body to work -->
+    <script src="js/d3chart.js"></script>
 
 </body>
 </html>

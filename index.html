@@ -34,15 +34,22 @@
 <script src="js/d3chart.js"></script>
 
 <div id="search" class="search">
-		<input type="text" id="stockCode">
-		
-        <button type="button" onclick="buildUrl();" >enter URL</button>
+	<input type="text" id="stockCode">
+	
+    <button type="button" onclick="buildUrl();" >enter URL</button>
 </div>
+
+<div id="codeSearchArea">
+    <label for="codeSearch">Find Company Stock Price</label>
+    <p>Enter the name of a company to find stock</p>
+    <input type="search" name="codeSearch" id="codeSearch" placeholder="company name"/>
+</div>
+<div id="searchResults"></div>
 
 
 
 <div>
-<button onclick="simpleAjax()" id="AjaxPrompt">Get Stock Data</button>
+<button onclick="apiCall()" id="AjaxPrompt">Get Stock Data</button>
 </div>
 
 <!-- <div>

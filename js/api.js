@@ -12,16 +12,10 @@ function buildUrl(){
     console.log(auth_url);
 }
 
-//url for W.R. Berkley Corp
-//https://www.quandl.com/api/v3/datasets/WIKI/WRB.json?auth_token=SQ6hUVEtaezYxrtDK__i
-
-
-//   WIKI/CSII
-
+//function using vanilla AJAX to make api call to Quandl DB
 var request;
 
-
-function simpleAjax(){
+function apiCall(){
     request = new XMLHttpRequest()
     console.log(request);
     request.open('GET', auth_url);
@@ -39,5 +33,29 @@ function simpleAjax(){
     request.send();
     console.log(request.status);
 }
+
+
+//url for W.R. Berkley Corp
+//https://www.quandl.com/api/v3/datasets/WIKI/WRB.json?auth_token=SQ6hUVEtaezYxrtDK__i
+
+
+//   WIKI/CSII
+
+
+//use d3 to parse csv of stock Codes
+
+//creates and array of arrays
+d3.text('../stockList/WIKI_tickers.csv', function(data){
+    arrayOfCodes = d3.csv.parseRows(data);
+    // console.log(arrayOfCodes);
+});
+
+//creates an array of objects
+d3.csv('../stockList/WIKI_tickers.csv', function(data){
+    codesObj=data;
+    // console.log(codesObj);
+    });
+
+
 
 

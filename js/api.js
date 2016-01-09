@@ -1,27 +1,23 @@
 var auth_url;
 var base_url = 'https://www.quandl.com/api/v3/datasets/';
 var companyCode;
+var companyName;
+var request;
 
 //Passing a value from HTML into a function: http://stackoverflow.com/questions/7957039/passing-value-from-text-input-into-javascript-function
 
-function buildUrl(){
+function buildUrl(code){
     console.log('buildUrl');
-
-    //need to pass company code into this function from codesObj search results.
-    
-
-
-
-    var input = document.getElementById('stockCode'),
-        stockCode = input.value;
-    if (stockCode) {
-        auth_url = base_url + stockCode + '.json?auth_token=SQ6hUVEtaezYxrtDK__i'
+    // var input = document.getElementById('stockCode'),
+        // stockCode = input.value;
+    if (code) {
+        auth_url = base_url + code + '.json?auth_token=SQ6hUVEtaezYxrtDK__i'
     }
     console.log(auth_url);
 }
 
 //function using vanilla AJAX to make api call to Quandl DB
-var request;
+
 
 function apiCall(){
 
@@ -65,27 +61,17 @@ function apiCall(){
 
 function buildResults (codesObj) {
     var input = document.getElementById("codeSearch");
-
-    // console.log(codesObj[0].name);
-    // console.log(codesObj[0].quandlcode);
-
     var myExp = new RegExp(input.value, 'i');
-
     var output = '<ul class=searchResults>';
 
-
     codesObj.forEach(function(company, i){
-        // console.log(company);
         if (company.name.search(myExp) != -1 ){
-            // console.log(company.name + company.quandlcode);
+            
             companyCode = company.quandlcode;
-            console.log(company.name + ' ' + companyCode);
-            output += '<li><span onclick="selectCompany(companyCode)">'+company.name+'</span></li>'
-        
-        // console.log(company.name);
-        // console.log(companyCode);
+            companyName = company.name;
+            output += '<li><span onclick="selectCompany(companyName,companyCode)">'+company.name+ ' '+company.quandlcode+'</span></li>'
         }
-    })
+    });
 
     output += '</ul>';
 
@@ -94,14 +80,14 @@ function buildResults (codesObj) {
 
 }
 
-selectCompany = function(companyCode){
+selectCompany = function(company, code){
     console.log('selectCompany');
-    console.log(companyCode);
+    console.log(company);
+    console.log(code);
 
-    // if (companyCode) {
-    //     auth_url = base_url + companyCode + '.json?auth_token=SQ6hUVEtaezYxrtDK__i'
-    // }
-    // console.log(auth_url);
+    build(code);
+    apiCall();
+
 }
 
 

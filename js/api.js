@@ -62,13 +62,15 @@ function buildResults (codesObj) {
     var input = document.getElementById("codeSearch");
     var myExp = new RegExp(input.value, 'i');
     var output = '<ul class=searchResults>';
+    var counter = -1;
 
     codesObj.forEach(function(company, i){
         if (company.name.search(myExp) != -1 ){
-            
+
+            counter ++;           
             companyCode = company.quandlcode;
             companyName = company.name;
-            output += '<li><span onclick="selectCompany(companyName,companyCode)">'+company.name+ ' '+company.quandlcode+'</span></li>'
+            output += '<li><span id="'+counter+'"'+ 'data-code="'+company.quandlcode+ '"onclick="selectCompany(this.id)">'+company.name+' '+company.quandlcode+'</span></li>'
         }
     });
 
@@ -79,14 +81,13 @@ function buildResults (codesObj) {
 
 }
 
-selectCompany = function(company, code){
+selectCompany = function(id){
     console.log('selectCompany');
-    console.log(company);
-    console.log(code);
+    console.log(id);
+    var selectedCompany = document.getElementById(id);
+    var code = selectedCompany.dataset.code;
 
     buildUrl(code);
     apiCall();
 
 }
-
-

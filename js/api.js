@@ -8,7 +8,7 @@ function buildUrl(){
     console.log('buildUrl');
 
     //need to pass company code into this function from codesObj search results.
-    console.log
+    
 
 
 
@@ -24,6 +24,7 @@ function buildUrl(){
 var request;
 
 function apiCall(){
+
     request = new XMLHttpRequest()
     console.log(request);
     request.open('GET', auth_url);
@@ -64,7 +65,6 @@ function apiCall(){
 
 function buildResults (codesObj) {
     var input = document.getElementById("codeSearch");
-    // console.log(input.value);
 
     // console.log(codesObj[0].name);
     // console.log(codesObj[0].quandlcode);
@@ -78,7 +78,12 @@ function buildResults (codesObj) {
         // console.log(company);
         if (company.name.search(myExp) != -1 ){
             // console.log(company.name + company.quandlcode);
-        output += '<li><span onclick="buildUrl()">'+company.name+'</span></li>'
+            companyCode = company.quandlcode;
+            console.log(company.name + ' ' + companyCode);
+            output += '<li><span onclick="selectCompany(companyCode)">'+company.name+'</span></li>'
+        
+        // console.log(company.name);
+        // console.log(companyCode);
         }
     })
 
@@ -86,4 +91,17 @@ function buildResults (codesObj) {
 
     //to output search results as HTML
     document.getElementById("searchResultsBase").innerHTML = output;
+
 }
+
+selectCompany = function(companyCode){
+    console.log('selectCompany');
+    console.log(companyCode);
+
+    // if (companyCode) {
+    //     auth_url = base_url + companyCode + '.json?auth_token=SQ6hUVEtaezYxrtDK__i'
+    // }
+    // console.log(auth_url);
+}
+
+

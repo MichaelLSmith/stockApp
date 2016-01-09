@@ -48,7 +48,6 @@ var line = d3.svg.line()
 
 //Create chart function
 function render(data){
-    console.log(data);
    
    xScale.domain( d3.extent(data, function (d) { return d[0]; }));
    yScale.domain( d3.extent(data, function (d) { return d[1]; }));

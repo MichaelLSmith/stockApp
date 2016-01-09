@@ -54,7 +54,6 @@ function apiCall(){
     //creates an array of objects
     d3.csv('../stockList/WIKI_tickers.csv', function(data){
         codesObj=data;
-        console.log(codesObj);
         });
 
 //get data from parsed csv (either array or obj form, prob obj)
@@ -85,7 +84,7 @@ selectCompany = function(company, code){
     console.log(company);
     console.log(code);
 
-    build(code);
+    buildUrl(code);
     apiCall();
 
 }

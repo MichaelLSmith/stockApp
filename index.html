@@ -20,35 +20,12 @@
 </head>
 <body>
 
-
-<div id="search" class="search">
-	<input type="text" id="stockCode">
-	
-    <button type="button" onclick="buildUrl();" >enter Company Code</button>
-</div>
-
 <div id="codeSearchArea">
     <label for="codeSearch">Find Company Stock Price</label>
     <p>Enter the name of a company to find stock</p>
     <input type="search" name="codeSearch" id="codeSearch" placeholder="company name" onkeyup="buildResults(codesObj)" />
 </div>
 <div id="searchResultsBase"></div>
-
-<!-- Hard coded search results -->
-
-<div>
-    <ul>
-        <li>
-            <span onclick="buildUrl()">Company Name</span>
-        </li>
-        <li>Company Code(May not need to display this)</li>
-    </ul>
-</div>
-
-<div>
-<button onclick="apiCall()" id="AjaxPrompt">Get Stock Data</button>
-</div>
-
 
  <!-- d3 library -->
     <script src="js/d3/d3.v3.js"></script>

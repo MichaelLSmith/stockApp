@@ -70,13 +70,23 @@ function buildResults (codesObj) {
             counter ++;           
             companyCode = company.quandlcode;
             companyName = company.name;
-            output += '<li><span id="'+counter+'"'+ 'data-code="'+company.quandlcode+ '"onclick="selectCompany(this.id)">'+company.name+' '+company.quandlcode+'</span></li>'
+            
+            output += '<li><span id="'
+            output += counter + '"';
+            output += 'data-code="' + company.quandlcode;
+            output += '"onclick="selectCompany(this.id)">';
+            output += company.name + ' ';
+            output += company.quandlcode;
+            output += '</span></li>';
+            
+
+            // +counter+'"'+ 'data-code="'+company.quandlcode+ '"onclick="selectCompany(this.id)">'+company.name+' '+company.quandlcode+'</span></li>'
         }
     });
 
     output += '</ul>';
 
-    //to output search results as HTML
+    //output search results as HTML
     document.getElementById("searchResultsBase").innerHTML = output;
 
 }

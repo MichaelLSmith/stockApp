@@ -1,0 +1,1078 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"selectedCompany"
+			],
+			[
+				"build",
+				"buildResults"
+			],
+			[
+				"cop",
+				"company"
+			],
+			[
+				"compa",
+				"companyName"
+			],
+			[
+				"new",
+				"newList"
+			],
+			[
+				"copan",
+				"companyCode"
+			],
+			[
+				"co",
+				"companyCode"
+			],
+			[
+				"s",
+				"selectCompany"
+			],
+			[
+				"com",
+				"company"
+			],
+			[
+				"company",
+				"companyCode"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"buil",
+				"buildResults"
+			],
+			[
+				"bu",
+				"buildUrl"
+			],
+			[
+				"sear",
+				"searchResults"
+			],
+			[
+				"code",
+				"codesObj"
+			],
+			[
+				"onk",
+				"onkeyup	Attr"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"array",
+				"arrayOfCodes"
+			],
+			[
+				"codes",
+				"codesObj"
+			],
+			[
+				"W",
+				"WIKI"
+			],
+			[
+				"au",
+				"auth_url"
+			],
+			[
+				"sto",
+				"stockUrl"
+			],
+			[
+				"iso",
+				"isolatedStockData"
+			],
+			[
+				"isl",
+				"isolatedStockData"
+			],
+			[
+				"date",
+				"dateParse"
+			],
+			[
+				"dat",
+				"dateWithFormatedDate"
+			],
+			[
+				"d",
+				"dateWithFormatedDate"
+			],
+			[
+				"is",
+				"isolatedStockData"
+			],
+			[
+				"so",
+				"stockData"
+			],
+			[
+				"i",
+				"isolatedStockData"
+			],
+			[
+				"stock",
+				"stockData"
+			],
+			[
+				"r",
+				"response"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"dt",
+				"dataset"
+			],
+			[
+				"js",
+				"jsonStockData"
+			],
+			[
+				"j",
+				"jsonStockData"
+			],
+			[
+				"stoc",
+				"stockObj"
+			],
+			[
+				"response",
+				"responseText"
+			],
+			[
+				"simple",
+				"simpleAjax"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"api",
+				"apiCall"
+			],
+			[
+				"ap",
+				"apiCall"
+			],
+			[
+				"Sto",
+				"stockData"
+			],
+			[
+				"data",
+				"dataSet"
+			],
+			[
+				"par",
+				"parsedDate"
+			],
+			[
+				"pars",
+				"parsedData"
+			],
+			[
+				"Da",
+				"dateParse"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"x",
+				"xScale"
+			],
+			[
+				"St",
+				"stockData"
+			],
+			[
+				"y",
+				"yAxis"
+			],
+			[
+				"ou",
+				"outerHeight"
+			],
+			[
+				"in",
+				"innerHeight"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"X",
+				"xAxis"
+			],
+			[
+				"yA",
+				"yAxisG"
+			],
+			[
+				"inn",
+				"innerHeight"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"out",
+				"outerHeight"
+			],
+			[
+				"labe",
+				"labels"
+			],
+			[
+				"chart",
+				"chart_obj"
+			],
+			[
+				"dta",
+				"datasets"
+			],
+			[
+				"c",
+				"chart_obj"
+			],
+			[
+				"char",
+				"chart_obj"
+			],
+			[
+				"st",
+				"Stockdata"
+			],
+			[
+				"arr",
+				"arrayToList"
+			],
+			[
+				"rever",
+				"reverseArrayInPlace"
+			],
+			[
+				"l",
+				"lastHalf"
+			],
+			[
+				"nu",
+				"num1"
+			],
+			[
+				"num",
+				"num1"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"arra",
+				"arrayVal"
+			],
+			[
+				"Main",
+				"MainCtrl"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"Web",
+				"WebDev"
+			],
+			[
+				"set",
+				"setProducts"
+			],
+			[
+				"auth",
+				"authToken"
+			],
+			[
+				"pass",
+				"passWord"
+			],
+			[
+				"user",
+				"userName"
+			],
+			[
+				"parse",
+				"parsedData"
+			],
+			[
+				"J",
+				"JSON"
+			],
+			[
+				"S",
+				"stringOfRequest"
+			],
+			[
+				"req",
+				"request_body"
+			],
+			[
+				"crea",
+				"createDummyUser"
+			],
+			[
+				"ret",
+				"retrieveProducts"
+			],
+			[
+				"ad",
+				"addProduct"
+			],
+			[
+				"request",
+				"request_body"
+			],
+			[
+				"or",
+				"order_routes"
+			],
+			[
+				"produ",
+				"product_obj"
+			],
+			[
+				"prod",
+				"product_obj"
+			],
+			[
+				"pro",
+				"productStorage"
+			],
+			[
+				"post",
+				"postgres"
+			],
+			[
+				"p",
+				"postgres"
+			],
+			[
+				"rq",
+				"request_body"
+			],
+			[
+				"reque",
+				"request_body"
+			],
+			[
+				"requ",
+				"request_body"
+			],
+			[
+				"B",
+				"BASE_URL"
+			],
+			[
+				"e",
+				"error"
+			],
+			[
+				"sta",
+				"statusCode"
+			],
+			[
+				"G",
+				"GET"
+			],
+			[
+				"read",
+				"readableLength"
+			],
+			[
+				"ext",
+				"extname"
+			],
+			[
+				"ex",
+				"extname"
+			],
+			[
+				"list",
+				"listExt"
+			],
+			[
+				"end",
+				"endpoint"
+			],
+			[
+				"Test",
+				"test2"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"inner",
+				"innerArray"
+			],
+			[
+				"value",
+				"value2"
+			],
+			[
+				"index",
+				"index2"
+			],
+			[
+				"pr",
+				"process"
+			],
+			[
+				"produc",
+				"productId"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"u",
+				"uib-accordion-group"
+			],
+			[
+				"uib",
+				"uib-accordion-group"
+			],
+			[
+				"Ac",
+				"AccordionCtrl"
+			],
+			[
+				"E",
+				"EditProductCtrl"
+			],
+			[
+				"log",
+				"localStorage"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"product",
+				"productId"
+			],
+			[
+				"P",
+				"ProductService"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"lcoal",
+				"localStorage"
+			],
+			[
+				"temp",
+				"templateUrl"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"res",
+				"response"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\nValue   Cards\n+1      2, 3, 4, 5, 6\n0       7, 8, 9\n-1      10, 'J', 'Q', 'K','A'",
+			"settings":
+			{
+				"buffer_size": 82,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/michael/git/jsExperiments/lessThan10.js",
+			"settings":
+			{
+				"buffer_size": 990,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/michael/git/learnYouNode/2ndTry/jugAsync.js",
+			"settings":
+			{
+				"buffer_size": 934,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 285.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"Snippet: h",
+				"Snippet: html"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/michael/git/jsExperiments",
+		"/home/michael/git/stockApp/js"
+	],
+	"file_history":
+	[
+		"/home/michael/git/stockApp/js/dataManipulation.js",
+		"/home/michael/git/stockApp/js/d3chart.js",
+		"/home/michael/git/stockApp/js/api.js",
+		"/home/michael/git/stockApp/index.html",
+		"/home/michael/git/stockApp/css/main.css",
+		"/home/michael/Downloads/Ex_Files_JScript_AJAX/Exercise Files/04-04/finished/ajax/mystyle.css",
+		"/home/michael/brainstation/ModelChallenges/instagramAPI/js/app.js",
+		"/home/michael/git/stockApp/js/main.js",
+		"/home/michael/git/stockApp/js/hardCodedData.js",
+		"/home/michael/git/WorkingStockApp/js/app.js",
+		"/home/michael/git/WorkingStockApp/index.html",
+		"/home/michael/git/stockApp/js/app.js",
+		"/home/michael/brainstation/myAngularShop/js/services/ApiService.js",
+		"/home/michael/brainstation/ModelChallenges/instagramAPI/index.html",
+		"/home/michael/brainstation/D-NodeChallenges/IntroModule/app.js",
+		"/home/michael/brainstation/D-NodeChallenges/IntroModule/simpleSum.js",
+		"/home/michael/brainstation/D-NodeChallenges/JSON_API_Server/node/server.js",
+		"/home/michael/git/stockapp/js/hardCodedData.js",
+		"/home/michael/git/stockapp/index.html",
+		"/home/michael/git/stockapp/simpleLine.html",
+		"/home/michael/git/stockapp/js/app.js",
+		"/home/michael/git/jsExperiments/alterArrayValue.html",
+		"/home/michael/git/jsExperiments/dateConversion.html",
+		"/home/michael/git/jsExperiments/map.html",
+		"/home/michael/git/stockapp/simpleReturn.html",
+		"/home/michael/git/stockapp/js/api.js",
+		"/home/michael/git/stockapp/js/curran.js",
+		"/home/michael/git/D3_Experimentation/js/TestChart.html",
+		"/home/michael/git/stockapp/css/chart.css",
+		"/home/michael/git/stockapp/js/d3/d3.v3.js",
+		"/home/michael/git/stockapp/js/d3/d3.v3.min.js",
+		"/home/michael/git/stockapp/test.html",
+		"/home/michael/git/stockapp/js/chartOptions.js",
+		"/home/michael/git/BuildaChartTut/index.html",
+		"/home/michael/git/D3_Experimentation/index.html",
+		"/home/michael/git/D3_Experimentation/js/data.js",
+		"/home/michael/git/D3_Experimentation/css/app.css",
+		"/home/michael/git/D3_Experimentation/js/app.js",
+		"/home/michael/git/D3_Experimentation/d3/d3.js",
+		"/home/michael/git/D3_Experimentation/js/d3.js",
+		"/home/michael/git/D3.js/js/1.js",
+		"/home/michael/git/stockapp/js/stock.js",
+		"/home/michael/git/stockapp/js/data.js",
+		"/home/michael/git/stockapp/stock.html",
+		"/home/michael/git/EloquentJS/palindrome.js",
+		"/home/michael/git/EloquentJS/list.js",
+		"/home/michael/git/EloquentJS/reverseArray.js",
+		"/home/michael/git/EloquentJS/sumRange.js",
+		"/home/michael/git/EloquentJS/test.js",
+		"/home/michael/git/EloquentJS/beanCounting.js",
+		"/home/michael/git/EloquentJS/palindrome2.js",
+		"/home/michael/git/EloquentJS/min.js",
+		"/home/michael/git/EloquentJS/recursion.js",
+		"/home/michael/git/EloquentJS/chess.js",
+		"/home/michael/git/EloquentJS/fizzBuzz.js",
+		"/home/michael/git/EloquentJS/fizzBuzzNotes.txt",
+		"/home/michael/brainstation/C-angularChallenges/todoList/index.html",
+		"/home/michael/brainstation/C-angularChallenges/todoList/app.js",
+		"/home/michael/brainstation/ngOptionsTest/app.js",
+		"/home/michael/brainstation/ngOptionsTest/index.html",
+		"/home/michael/brainstation/C-angularChallenges/imdbClone/index.html",
+		"/home/michael/brainstation/C-angularChallenges/Rares_todolist_solution/website 2/index.html",
+		"/home/michael/brainstation/C-angularChallenges/Rares_todolist_solution/website 2/app.js",
+		"/home/michael/brainstation/C-angularChallenges/todoList/testOptions.html",
+		"/home/michael/brainstation/C-angularChallenges/todoList/css/app.css",
+		"/home/michael/brainstation/bsportal/api/server.js",
+		"/home/michael/brainstation/bsportal/app/common/controllers/auth.ctrl.js",
+		"/home/michael/brainstation/bsportal/api/modules/login_generator.js",
+		"/home/michael/brainstation/bsportal/app/common/services/api.srv.js",
+		"/home/michael/brainstation/Z-brainstationNotes/raresFreelancingTalk.txt",
+		"/home/michael/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/michael/WebProjects/Ideas for Jessica's site.txt",
+		"/home/michael/brainstation/infraworks/app/js/services/api.srv.js",
+		"/home/michael/brainstation/infraworks/api/routes/index.js",
+		"/home/michael/brainstation/bsportal/app/site/courses/controllers/course.ctrl.js",
+		"/home/michael/brainstation/infraworks/api/server.js",
+		"/home/michael/brainstation/infraworks/app/app.js",
+		"/home/michael/brainstation/bsportal/app/site/courses/partials/course-course.html",
+		"/home/michael/brainstation/bsportal/api/modules/add_course_generator.js",
+		"/home/michael/brainstation/bsportal/api/modules/all_user_generator.js",
+		"/home/michael/brainstation/bsportal/app/app.js",
+		"/home/michael/brainstation/bsportal/app/site/courses/partials/course-overview.html",
+		"/home/michael/brainstation/bsportal/api/courses/Z20UvUw.json",
+		"/home/michael/brainstation/bsportal/api/config.json",
+		"/home/michael/brainstation/bsportal/api/package.json",
+		"/home/michael/git/EloquentJS/7#s.js",
+		"/home/michael/brainstation/D-NodeChallenges/WebScraper/boxOfficeMojo.js",
+		"/home/michael/git/JS_Game/index.html",
+		"/home/michael/git/JS_Game/scripts/game.js",
+		"/home/michael/git/JS_Game/stoppedByGuards.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/js/services/ApiService.js",
+		"/home/michael/brainstation/MySequelizeShopApp/api/routes/users.js",
+		"/home/michael/brainstation/MySequelizeShopApp/api/server.js",
+		"/home/michael/brainstation/bsportal/api/courses/Z1E1SdJ.json",
+		"/home/michael/brainstation/bsportal/app/common/services/content.service.js",
+		"/home/michael/brainstation/bsportal/app/common/controllers/overview.ctrl.js",
+		"/home/michael/brainstation/bsportal/api/courses/ZrbsjB.json",
+		"/home/michael/brainstation/bsportal/api/modules/course_generator.js",
+		"/home/michael/brainstation/bsportal/app/common/controllers/course.ctrl.js",
+		"/home/michael/brainstation/bsportal/api/courses/Z2aWnSx.json",
+		"/home/michael/brainstation/bsportal/app/common/partials/course.html",
+		"/home/michael/brainstation/bsportal/app/index.html",
+		"/home/michael/brainstation/myAngularShop/js/services/ProductService.js",
+		"/home/michael/brainstation/infraworks/app/index.ejs",
+		"/home/michael/brainstation/bsportal (2)/app/app.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/js/controllers/AuthCtrl.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/js/services/ProductService.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/js/controllers/ProductCtrl.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/app.js",
+		"/home/michael/brainstation/MySequelizeShopApp/api/routes/products.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/js/controllers/AdminCtrl.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/js/controllers/MainCtrl.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/templates/admin.html",
+		"/home/michael/brainstation/MySequelizeShopApp/api/models/users.js",
+		"/home/michael/brainstation/D-NodeChallenges/ExpressServer/api/PreDBserver.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/js/services/OrdersService.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/templates/add_product.html",
+		"/home/michael/brainstation/MySequelizeShopApp/api/models/products.js",
+		"/home/michael/brainstation/D-NodeChallenges/ExpressServer/api/Rares_server.js",
+		"/home/michael/brainstation/postgresServer/Rares_SQLServer/server.js",
+		"/home/michael/brainstation/postgresServer/server.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/templates/login.html",
+		"/home/michael/brainstation/MySequelizeShopApp/app/templates/home.html",
+		"/home/michael/brainstation/MySequelizeShopApp/Jon-Rayapp/templates/home.html",
+		"/home/michael/brainstation/MySequelizeShopApp/Jon-Rayapp/js/services/ApiService.js",
+		"/home/michael/brainstation/MySequelizeShopApp/app/index.html",
+		"/home/michael/brainstation/MySequelizeShopApp/Jon-Rayapp/js/services/ProductService.js",
+		"/home/michael/brainstation/D-NodeChallenges/ExpressServer/app/js/services/ProductService.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"stockCode",
+			"a",
+			"stockUrl",
+			"url",
+			"xhttp",
+			"ajax_call",
+			"button",
+			"HTTPScall",
+			"testData",
+			"13506",
+			".\n",
+			"50",
+			"30",
+			"scale",
+			"\");\n",
+			"div",
+			"section",
+			"data",
+			"draw",
+			"photos",
+			"Things",
+			"h",
+			"Things",
+			"true",
+			"JSONparsedUserName",
+			"userName",
+			");\n",
+			"product",
+			"productId",
+			"self",
+			"response",
+			"request",
+			"resp",
+			"team4",
+			"id",
+			"message",
+			"entry ",
+			"div",
+			"innerContainer",
+			"main",
+			"section",
+			"main",
+			"section",
+			"div",
+			"section",
+			"th",
+			"p",
+			"nav",
+			"fieldset",
+			"div",
+			"ul",
+			"email",
+			"textarea",
+			"price",
+			"div",
+			"section",
+			"div",
+			"category",
+			"product",
+			"movie",
+			"six",
+			"show",
+			")};\n",
+			"services",
+			"home",
+			"UserDetailCtrl",
+			"todo",
+			"InsultCtrl",
+			"clearTrueTodos",
+			"scope",
+			"array",
+			"myApp",
+			"userName",
+			"h1",
+			"span",
+			"h6",
+			"h5",
+			"section",
+			"span",
+			"section",
+			"borderBackground",
+			"publish",
+			"createEntry",
+			"photos",
+			"data",
+			");\n",
+			"p",
+			"content",
+			"author",
+			"color",
+			"textarea1",
+			"password",
+			"first_name",
+			"p",
+			"        \n",
+			"make",
+			"brand",
+			"select",
+			"brand",
+			"hello",
+			"stock",
+			"opel",
+			"factoryName",
+			"div",
+			"brand",
+			">\n",
+			"scr",
+			" \n",
+			"sex",
+			"p",
+			"h6",
+			"h3",
+			"h6",
+			"figure",
+			"div",
+			"@media",
+			"moon",
+			"Left",
+			"div",
+			"head",
+			"Left",
+			"div",
+			"span",
+			"p",
+			"i",
+			"span",
+			"%>\n",
+			"m"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"li",
+			"button",
+			"div",
+			"link",
+			"class",
+			"img",
+			"4",
+			"3"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 82,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 72.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/michael/git/jsExperiments/lessThan10.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 990,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								647,
+								647
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/michael/git/learnYouNode/2ndTry/jugAsync.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/node.sublime-build",
+	"project": "stockApp.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

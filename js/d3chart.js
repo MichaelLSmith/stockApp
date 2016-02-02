@@ -7,7 +7,7 @@ var innerWidth  = outerWidth  - margin.left - margin.right;
 var innerHeight = outerHeight - margin.top  - margin.bottom;
 
 //create svg element in DOM
-var svg = d3.select("body").append("svg")
+var svg = d3.select("span").append("svg")
     .attr("width", outerWidth)
     .attr("height", outerHeight)
 

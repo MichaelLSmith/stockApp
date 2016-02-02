@@ -30,7 +30,8 @@ function apiCall(){
     request.onreadystatechange = function() {
       if (request.readyState == 4 && request.status == 200) {
 
-        //moves jsonData into dataManipulation.js so it can be formated to build d3 chart.
+        //works with JSON data so it can be formated to build d3 chart.
+        //called from dataManipulation.js file.
         traverseJson(request);
       }
     }
@@ -38,13 +39,6 @@ function apiCall(){
     request.send();
     console.log(request.status);
 }
-
-
-//url for W.R. Berkley Corp
-//https://www.quandl.com/api/v3/datasets/WIKI/WRB.json?auth_token=SQ6hUVEtaezYxrtDK__i
-
-
-//   WIKI/CSII
 
 //Search Functionality
 
@@ -78,9 +72,6 @@ function buildResults (codesObj) {
             output += company.name + ' ';
             output += company.quandlcode;
             output += '</span></li>';
-            
-
-            // +counter+'"'+ 'data-code="'+company.quandlcode+ '"onclick="selectCompany(this.id)">'+company.name+' '+company.quandlcode+'</span></li>'
         }
     });
 
